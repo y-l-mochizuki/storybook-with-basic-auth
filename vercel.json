@@ -1,11 +1,5 @@
 {
   "installCommand": "npm install",
   "buildCommand": "npm run build-storybook",
-  "builds": [
-    {
-      "src": "app.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [{ "src": "/.*", "dest": "app.js" }]
 }

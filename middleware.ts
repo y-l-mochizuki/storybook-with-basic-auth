@@ -3,8 +3,6 @@ import { NextRequest, NextResponse } from "next/server";
 const USER_NAME = "test";
 const PASSWORD = "test";
 
-export const runtime = "edge";
-
 export function middleware(req: NextRequest) {
   const basicAuth = req.headers.get("authorization");
   if (basicAuth) {

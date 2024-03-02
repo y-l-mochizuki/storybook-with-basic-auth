@@ -1,0 +1,10 @@
+{
+  "installCommand": "npm install",
+  "buildCommand": "npm run build-storybook",
+  "functions": {
+    "app.js": {
+      "maxDuration": 10
+    }
+  },
+  "routes": [{ "src": "/.*", "dest": "app.js" }]
+}

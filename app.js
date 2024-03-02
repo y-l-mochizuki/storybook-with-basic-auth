@@ -9,7 +9,7 @@ const app = protect(
   (username, password) =>
     safeCompare(username, USER_NAME) && safeCompare(password, PASSWORD), // timing attack 対策
   {
-    directory: `${__dirname}/storybook-static`, // public 配下のファイルを静的コンテンツとして配信する
+    directory: `${__dirname}/storybook-static`, // storybook-static 配下のファイルを配信する
     onAuthFailed: (res) => {
       res.end("Authentication failed");
     },

@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "vercel-sapper"
+      "use": "@vercel/node"
     },
     {
       "src": "app.js",

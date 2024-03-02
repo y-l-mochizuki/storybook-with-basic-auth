@@ -3,12 +3,12 @@
   "buildCommand": "npm run build-storybook",
   "builds": [
     {
-      "src": "app.js",
-      "use": "@vercel/node"
-    },
-    {
       "src": "package.json",
       "use": "vercel-sapper"
+    },
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [{ "src": "/.*", "dest": "app.js" }]

@@ -3,8 +3,8 @@
   "buildCommand": "npm run build-storybook",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node"
+      "src": "storybook-static",
+      "use": "@vercel/static"
     },
     {
       "src": "app.js",
